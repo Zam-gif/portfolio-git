@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замарт Рамазанова — портфолио</title>
+    <meta name="description" content="Портфолио исследователя Замарт Рамазановой: о себе, проекты и контакты.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#top">Замарт Рамазанова</a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+            Меню
+        </button>
+        <nav class="site-nav" id="site-nav">
+            <a href="#about">О себе</a>
+            <a href="#projects">Проекты</a>
+            <a href="#skills">Навыки</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <p class="kicker">Портфолио · 2026</p>
+            <h1>Замарт Рамазанова</h1>
+            <p class="role">Исследователь</p>
+            <p class="lead">
+                Я формулирую вопрос, собираю опору для вывода и учусь показывать
+                это на веб-странице. Этот сайт — моя визитка: кто я, над чем
+                работаю и как со мной связаться.
+            </p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="#projects">Смотреть проекты</a>
+                <a class="button button-quiet" href="#contact">Написать</a>
+            </div>
+        </section>
+
+        <section class="facts" aria-label="Коротко обо мне">
+            <article>
+                <h2>Роль</h2>
+                <p>Исследователь. Мне важно, чтобы вывод можно было проверить и коротко объяснить.</p>
+            </article>
+            <article>
+                <h2>Сейчас</h2>
+                <p>Практика TechOrda по vibe coding: HTML, CSS и JavaScript в Cursor.</p>
+            </article>
+            <article>
+                <h2>Связь</h2>
+                <p><a href="mailto:zamar.ramazanova@gmail.com">zamar.ramazanova@gmail.com</a></p>
+            </article>
+        </section>
+
+        <section id="about" class="about">
+            <h2>О себе</h2>
+            <div class="about-grid">
+                <p>
+                    Исследование для меня — это ясный вопрос и честный ответ.
+                    Сначала я отделяю то, что уже известно, от того, что ещё
+                    нужно проверить. Потом записываю вывод так, чтобы его понял
+                    человек без моего контекста.
+                </p>
+                <p>
+                    Сейчас я переношу этот навык в код. Страница собирается из
+                    трёх частей: HTML задаёт структуру, CSS — вид, JavaScript —
+                    поведение. Я описываю задачу, смотрю результат и правлю
+                    файл сама.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Проекты</h2>
+            <div class="project-list">
+                <article class="project">
+                    <p class="project-tag">HTML · CSS · JavaScript</p>
+                    <h3>Личное портфолио</h3>
+                    <p>
+                        Одностраничный сайт, который вы сейчас читаете. В нём
+                        есть навигация, карточки проектов и форма, которая
+                        открывает письмо на мою почту.
+                    </p>
+                </article>
+                <article class="project">
+                    <p class="project-tag">Git · Cursor · ноябрь 2026</p>
+                    <h3>Практика TechOrda</h3>
+                    <p>
+                        Первый репозиторий для этого сайта. Я учусь вести
+                        историю изменений и собирать интерфейс вместе с
+                        код-агентом, проверяя каждый файл.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Навыки</h2>
+            <ul class="skill-list">
+                <li>Исследовательский вопрос</li>
+                <li>Ясное письмо</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>Cursor</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <div>
+                <h2>Контакты</h2>
+                <p>
+                    Напишите, если хотите обсудить исследование или учебный
+                    проект. Форма откроет почтовую программу с уже заполненным
+                    письмом.
+                </p>
+                <p>
+                    <a class="mail-link" href="mailto:zamar.ramazanova@gmail.com">zamar.ramazanova@gmail.com</a>
+                </p>
+            </div>
+            <form id="contact-form">
+                <label>
+                    Имя
+                    <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <label>
+                    Почта
+                    <input type="email" name="email" autocomplete="email" required>
+                </label>
+                <label>
+                    Сообщение
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button class="button button-primary" type="submit">Открыть письмо</button>
+                <p class="form-note" id="form-note" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year">2026</span> Замарт Рамазанова</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
